@@ -18,12 +18,12 @@ A comprehensive guide to installing and configuring WordPress on Apache2 server.
 - Basic knowledge of commands - Linux/Vagrant/Gitbash
 - Access to a server or virtual box software
 
-## Installation Guide
-Check the [Installation Guide](installation/ubuntu-install.md) for step-by-step instructions.
-Or Automation guide [Installation Guide](installation/ubuntu-install-auto.md)
+## Server Installation Guide
+- Check the [Installation Guide](installation/ubuntu-install.md) for step-by-step instructions.
 
 ## Scripts
-Automate tasks with our [Scripts](scripts/) directory.
+- Automate tasks with our [Scripts](scripts/) directory.
+- Automate server guide [Installation Guide](installation/ubuntu-install-auto.md)
 
 ## Contributions
 Feel free to contribute by creating issues or submitting pull requests!
