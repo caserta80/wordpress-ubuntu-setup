@@ -52,7 +52,7 @@ done < inventory.txt
 ./deploy.sh
 
 
-# **Additional Security Configurations
+# Additional Security Configurations
 #PHP Security Settings
 ```bash
 cat > /etc/php/*/apache2/php.ini <<EOF
@@ -79,7 +79,7 @@ apt-get install -y unattended-upgrades
 dpkg-reconfigure -plow unattended-upgrades
 ```
 
-# *Best Practices
+# Best Practices
 -Security
 Store credentials in a secure vault
 Use SSH keys for server access
@@ -118,7 +118,7 @@ Verify file permissions
 Test SSL if configured
 Monitor error logs
 
-# **Troubleshooting
+# Troubleshooting
 
 Common issues and solutions:
 
@@ -136,7 +136,7 @@ Common issues and solutions:
     Verify module installation
     Confirm PHP-FPM status if used
 
-#** Maintenance Tasks
+# Maintenance Tasks
 Daily
 Monitor error logs
 Check service status
@@ -156,22 +156,6 @@ PHP errors
 Check PHP error log
 Verify module installation
 Confirm PHP-FPM status if used
-
-#** Maintenance Tasks
-Daily
-Monitor error logs
-Check service status
-Verify backup completion
-Weekly
-Review security updates
-Check disk usage
-Monitor performance metrics
-
-#** Monthly
-Full system updates
-Security audit
-Configuration review
-
 
 This markdown document provides a clean, organized format that's:
 - Easy to read
