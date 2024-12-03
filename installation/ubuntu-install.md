@@ -23,7 +23,7 @@ sudo apt-get update && sudo apt upgrade -y
 sudo apt-get --no-install-recommends -y apache2 ghostscript libapache2-mod-php mysql-server php php-bcmath php-curl php-imagick php-intl php-json php-mbstring php-mysql php-xml php-zip
 ```
 
-## **3.Security note: After installation, we will:
+## **3.Security note: After installation, we will:**
 - Secure your MySQL installation: 
 ```bash
 sudo mysql_secure_installation
