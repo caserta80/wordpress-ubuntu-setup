@@ -111,14 +111,14 @@ sudo vim /srv/www/wordpress/wp-config.php
 ```
 Find the following:
 
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+- define( 'AUTH_KEY',         'put your unique phrase here' );
+- define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+- define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+- define( 'NONCE_KEY',        'put your unique phrase here' );
+- define( 'AUTH_SALT',        'put your unique phrase here' );
+- define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+- define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+- define( 'NONCE_SALT',       'put your unique phrase here' );
 
 Delete those lines (ctrl+k will delete a line each time you press the sequence). Then replace with the content of https://api.wordpress.org/secret-key/1.1/salt/. (This address is a randomiser that returns completely random keys each time it is opened.) This step is important to ensure that your site is not vulnerable to “known secrets” attacks.
 
