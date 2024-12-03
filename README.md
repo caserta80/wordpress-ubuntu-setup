@@ -1,6 +1,6 @@
 # WordPress Ubuntu Setup
 
-A comprehensive guide to installing and configuring WordPress on an Ubuntu server. This repository is tailored to simplify the process with step-by-step instructions and automated scripts.
+A comprehensive guide to installing and configuring WordPress on Apache2 server. This repository is tailored to simplify the process with step-by-step instructions and automated scripts.
 
 ## Features
 - Detailed setup instructions
@@ -14,7 +14,7 @@ A comprehensive guide to installing and configuring WordPress on an Ubuntu serve
 4. [Contributions](#contributions)
 
 ## Prerequisites
-- Ubuntu 22.04 or later
+- Ubuntu Server 20.04 LTS 
 - Basic knowledge of Linux commands
 - Root access to your server
 
