@@ -107,7 +107,7 @@ sudo -u www-data sed -i 's/password_here/Hp7S74/' /srv/www/wordpress/wp-config.p
 ```
 Finally, in a terminal session open the configuration file in nano:
 ```bash
-sudo -u www-data nano /srv/www/wordpress/wp-config.php
+sudo vim /srv/www/wordpress/wp-config.php
 ```
 Find the following:
 
@@ -119,6 +119,7 @@ define( 'AUTH_SALT',        'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
+
 Delete those lines (ctrl+k will delete a line each time you press the sequence). Then replace with the content of https://api.wordpress.org/secret-key/1.1/salt/. (This address is a randomiser that returns completely random keys each time it is opened.) This step is important to ensure that your site is not vulnerable to “known secrets” attacks.
 
-Save and close the configuration file by typing ctrl+x followed by y then enter
+Save and close the configuration file.
