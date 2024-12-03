@@ -20,6 +20,7 @@ A comprehensive guide to installing and configuring WordPress on Apache2 server.
 
 ## Installation Guide
 Check the [Installation Guide](installation/ubuntu-install.md) for step-by-step instructions.
+Or Automation guide [Installation Guide](installation/ubuntu-install-auto.md)
 
 ## Scripts
 Automate tasks with our [Scripts](scripts/) directory.
