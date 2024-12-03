@@ -14,9 +14,9 @@ A comprehensive guide to installing and configuring WordPress on Apache2 server.
 4. [Contributions](#contributions)
 
 ## Prerequisites
-- Ubuntu Server 20.04 LTS 
-- Basic knowledge of Linux commands
-- Root access to your server
+- Ubuntu Server 20.04 LTS
+- Basic knowledge of commands - Linux/Vagrant/Gitbash
+- Access to a server or virtual box software
 
 ## Installation Guide
 Check the [Installation Guide](installation/ubuntu-install.md) for step-by-step instructions.
