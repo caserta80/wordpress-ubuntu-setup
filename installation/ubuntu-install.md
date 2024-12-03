@@ -103,7 +103,7 @@ Next, set the database credentials in the configuration file (do not replace dat
 ```bash
 sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
-sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp-config.php
+sudo -u www-data sed -i 's/password_here/Hp7S74/' /srv/www/wordpress/wp-config.php
 ```
 Finally, in a terminal session open the configuration file in nano:
 ```bash
