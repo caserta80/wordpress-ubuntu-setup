@@ -1,6 +1,6 @@
-#**To execute the script run the following commands:
-  -#chmod +x wp_installation.sh
-  -#./wp_installation.sh
+#To execute the script run the following commands:
+  #chmod +x wp_installation.sh
+  #./wp_installation.sh
 
 #!/bin/bash
 
