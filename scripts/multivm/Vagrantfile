@@ -1,4 +1,4 @@
-# Vagrantfile with provisioning for db01
+# Vagrantfile with provisioning for db01 and CentOS Vault fix
 Vagrant.configure("2") do |config|
   # Define web01
   config.vm.define "web01" do |web01|
@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  # Define web03
+  # Define web02
   config.vm.define "web02" do |web02|
     web02.vm.box = "ubuntu/focal64" # Ubuntu 20.04 LTS
     web02.vm.hostname = "web02.local"
@@ -34,10 +34,15 @@ Vagrant.configure("2") do |config|
 
     # Provisioning script for db01
     db01.vm.provision "shell", inline: <<-SHELL
-      # Update packages
+      # Update CentOS repository configuration to use vault.centos.org
+      sudo sed -i 's|^mirrorlist=|#mirrorlist=|g' /etc/yum.repos.d/CentOS-Base.repo
+      sudo sed -i 's|^#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Base.repo
+
+      # Clean Yum cache and update system
+      sudo yum clean all
       sudo yum update -y
 
-      # Install MySQL server
+      # Install MySQL (MariaDB)
       sudo yum install -y mariadb-server
 
       # Start and enable MySQL service
